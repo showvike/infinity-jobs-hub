@@ -9,7 +9,9 @@ export default {
       },
       colors: {
         "dark-01": "#1a1919",
+        "dark-02": "#474747",
         "dark-03": "#757575",
+        "dark-04": "#A3A3A3",
         "li-gr-fr": "#7E90FE",
         "li-gr-to": "#9873FF",
       },
