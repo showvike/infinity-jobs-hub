@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05] flex justify-around items-center pt-12">
+    <nav className="bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05] flex justify-between items-center pt-12 px-24">
       <h1 className="font-extrabold text-3xl text-dark-01">
         Infinity Jobs Hub
       </h1>
