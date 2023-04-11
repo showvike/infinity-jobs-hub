@@ -1,5 +1,5 @@
 import React from "react";
-import person from "../../assets/images/person.png";
+import Person from "../../assets/images/person.png";
 
 const Banner = () => {
   return (
@@ -23,7 +23,7 @@ const Banner = () => {
           Get Started
         </button>
       </div>
-      <img className="w-1/2" src={person} alt="A person" />
+      <img className="w-1/2" src={Person} alt="A person" />
     </div>
   );
 };
