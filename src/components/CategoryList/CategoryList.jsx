@@ -11,14 +11,14 @@ const CategoryList = () => {
   }, []);
 
   return (
-    <div className="my-16">
+    <div className="mt-16">
       <div className="text-center">
         <h2 className="font-extrabold text-5xl text-dark-01">
           Job Category List
         </h2>
         <p className="mt-4 font-medium text-dark-03">
           Explore thousands of job opportunities with all the information you
-          need. Its your future.
+          need. It's your future.
         </p>
       </div>
       <div className="mt-8 flex justify-between px-24 w-full gap-6">

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "logo": "https://i.ibb.co/J2GB4B3/google-0.png",
+    "title": "Software Developer",
+    "name": "Google LLC",
+    "type": "Onsite",
+    "location": "Austin, TX",
+    "time": "Full-time",
+    "salary": "$90,000 - $120,000",
+    "description": "We are seeking a skilled software developer to help build our next generation platform.",
+    "responsibilities": "Design, develop, and deploy software components.",
+    "educations": "Bachelor's degree in computer science or a related field.",
+    "experiences": "3+ years of experience in software development.",
+    "contact": {
+      "phone": "(123) 456-7890",
+      "email": "jobs@abccorp.com"
+    }
+  },
+  {
+    "id": 2,
+    "logo": "https://i.ibb.co/37NpBSs/netflix.png",
+    "title": "Marketing Coordinator",
+    "name": "Netflix",
+    "type": "Remote",
+    "location": "USA",
+    "time": "Part-time",
+    "salary": "$25 - $30 per hour",
+    "description": "We are seeking a highly motivated marketing coordinator to support our team's efforts.",
+    "responsibilities": "Create and implement marketing campaigns across multiple channels.",
+    "educations": "Bachelor's degree in marketing, business, or a related field.",
+    "experiences": "2+ years of experience in marketing or a related field.",
+    "contact": {
+      "phone": "(555) 555-5555",
+      "email": "jobs@xyzindustries.com"
+    }
+  },
+  {
+    "id": 3,
+    "logo": "https://i.ibb.co/PFYjCL5/tesla.png",
+    "title": "Product Manager",
+    "name": "Tesla",
+    "type": "Onsite",
+    "location": "San Francisco, CA",
+    "time": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "description": "We are seeking an experienced product manager to lead our team and guide our product strategy.",
+    "responsibilities": "Develop and manage the product roadmap and prioritize features.",
+    "educations": "Bachelor's degree in business, engineering, or a related field.",
+    "experiences": "5+ years of experience in product management or a related field.",
+    "contact": {
+      "phone": "(111) 111-1111",
+      "email": "jobs@123tech.com"
+    }
+  },
+  {
+    "id": 4,
+    "logo": "https://i.ibb.co/J2GB4B3/google-0.png",
+    "title": "Web Designer",
+    "name": "Google",
+    "type": "Remote",
+    "location": "USA",
+    "time": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "description": "We are seeking a talented web designer to join our team and help us create beautiful and functional websites.",
+    "responsibilities": "Create designs that are visually appealing, easy to use, and meet business goals.",
+    "educations": "Bachelor's degree in design, computer science, or a related field.",
+    "experiences": "3+ years of experience in web design or a related field.",
+    "contact": {
+      "phone": "(555) 123-4567",
+      "email": "jobs@456designs.com"
+    }
+  },
+  {
+    "id": 5,
+    "logo": "https://i.ibb.co/pnTJkL7/airbnb.png",
+    "title": "Human Resources Manager",
+    "name": "AirBnB",
+    "type": "Onsite",
+    "location": "New York, NY",
+    "time": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "description": "We are seeking an experienced HR manager to lead our team and oversee our HR operations.",
+    "responsibilities": "Develop and implement HR policies and procedures.",
+    "educations": "Bachelor's degree in human resources or a related field.",
+    "experiences": "5+ years of experience in HR management or a related field.",
+    "contact": {
+      "phone": "(555) 555-5555",
+      "email": "jobs@acmecorp.com"
+    }
+  },
+  {
+    "id": 6,
+    "logo": "https://i.ibb.co/kxKTz8x/career-hub.png",
+    "title": "Sales Representative",
+    "name": "Career Hub",
+    "type": "Remote",
+    "location": "USA",
+    "time": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "description": "We are seeking a results-driven sales representative to join our team and help us grow our business.",
+    "responsibilities": "Identify and pursue new sales opportunities.",
+    "educations": "Bachelor's degree in business or a related field.",
+    "experiences": "2+ years of experience in sales or a related field.",
+    "contact": {
+      "phone": "(555) 555-1234",
+      "email": "jobs@globalsalesco.com"
+    }
+  }
+]

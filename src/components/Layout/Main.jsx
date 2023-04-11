@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 
 const Main = () => {
   return (
-    <div className="container mx-auto font-manrope">
+    <div className="container mx-auto font-manrope mb-16">
       <Header />
       <Outlet />
     </div>
