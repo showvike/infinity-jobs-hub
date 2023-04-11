@@ -5,6 +5,7 @@ import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
 import Blog from "./components/Blog/Blog";
 import Home from "./components/Home/Home";
 import Main from "./components/Layout/Main";
+import NotFound from "./components/NotFound/NotFound";
 import Statistics from "./components/Statistics/Statistics";
 import ViewDetails from "./components/ViewDetails/ViewDetails";
 import "./index.css";
@@ -38,7 +39,12 @@ const router = createBrowserRouter([
         path: "blog",
         element: <Blog />,
       },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
+    errorElement: <NotFound />,
   },
 ]);
 
