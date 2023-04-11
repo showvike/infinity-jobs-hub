@@ -5,6 +5,7 @@ import Email from "../../assets/icons/email.png";
 import Frame from "../../assets/icons/frame.png";
 import Location from "../../assets/icons/location-0.png";
 import Phone from "../../assets/icons/phone.png";
+import { addToDb } from "../../utilities/fakeDb";
 
 const ViewDetails = () => {
   const {
@@ -16,7 +17,10 @@ const ViewDetails = () => {
     title,
     contact: { phone, email },
     location,
+    id,
   } = useLoaderData();
+
+  const handleApplyJob = (id) => addToDb(id);
 
   return (
     <div>
@@ -28,23 +32,27 @@ const ViewDetails = () => {
       <div className="mt-16 px-24 grid grid-cols-3 gap-6">
         <div className="col-span-2 flex flex-col gap-6">
           <p className="font-medium text-dark-03">
-            <p className="font-extrabold text-dark-01 mb-4">Job Description:</p>
+            <span className="block font-extrabold text-dark-01 mb-4">
+              Job Description:
+            </span>
             {description}
           </p>
           <p className="font-medium text-dark-03">
-            <p className="font-extrabold text-dark-01 mb-4">
+            <span className="block font-extrabold text-dark-01 mb-4">
               Job Responsibility:
-            </p>
+            </span>
             {responsibilities}
           </p>
           <p className="font-medium text-dark-03">
-            <p className="font-extrabold text-dark-01 mb-4">
+            <span className="block font-extrabold text-dark-01 mb-4">
               Educational Requirements:
-            </p>
+            </span>
             {educations}
           </p>
           <p className="font-medium text-dark-03">
-            <p className="font-extrabold text-dark-01 mb-4">Experiences:</p>
+            <span className="block font-extrabold text-dark-01 mb-4">
+              Experiences:
+            </span>
             {experiences}
           </p>
         </div>
@@ -110,7 +118,10 @@ const ViewDetails = () => {
               </div>
             </div>
           </div>
-          <button className="mt-6 bg-gradient-to-r from-li-gr-fr to-li-gr-to w-full py-4 rounded-lg font-extrabold text-xl text-white">
+          <button
+            onClick={() => handleApplyJob(id)}
+            className="mt-6 bg-gradient-to-r from-li-gr-fr to-li-gr-to w-full py-4 rounded-lg font-extrabold text-xl text-white"
+          >
             Apply Now
           </button>
         </div>
