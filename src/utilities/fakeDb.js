@@ -13,4 +13,4 @@ const getAppliedJobs = () => {
   return appliedJobs;
 };
 
-export { addToDb, getAppliedJobs as getShoppingCart };
+export { addToDb, getAppliedJobs };
