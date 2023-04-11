@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Frame from "../../assets/icons/frame.png";
 import Location from "../../assets/icons/location-0.png";
 
 const Job = ({ job }) => {
-  const { logo, title, name, type, time, location, salary } = job;
+  const { logo, title, name, type, time, location, salary, id } = job;
 
   return (
-    <div className="py-10 pl-10 border border-solid border-dark-06 rounded-lg">
+    <div className="p-10 border border-solid border-dark-06 rounded-lg">
       <div className="h-14">
         <img src={logo} alt={name} />
       </div>
@@ -32,9 +33,11 @@ const Job = ({ job }) => {
           </span>
         </p>
       </div>
-      <button className="px-4 py-2.5 bg-gradient-to-r from-li-gr-fr to-li-gr-to rounded-lg font-extrabold text-xl text-white">
-        View Details
-      </button>
+      <Link to={`/job/${id}`}>
+        <button className="px-4 py-2.5 bg-gradient-to-r from-li-gr-fr to-li-gr-to rounded-lg font-extrabold text-xl text-white">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const CategoryList = () => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
-    fetch("./category-list.json")
+    fetch("/category-list.json")
       .then((res) => res.json())
       .then((data) => setList(data));
   }, []);

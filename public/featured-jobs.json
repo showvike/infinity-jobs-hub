@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "logo": "https://i.ibb.co/J2GB4B3/google-0.png",
     "title": "Software Developer",
     "name": "Google LLC",
@@ -18,7 +18,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "logo": "https://i.ibb.co/37NpBSs/netflix.png",
     "title": "Marketing Coordinator",
     "name": "Netflix",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": 3,
+    "id": "3",
     "logo": "https://i.ibb.co/PFYjCL5/tesla.png",
     "title": "Product Manager",
     "name": "Tesla",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "id": 4,
+    "id": "4",
     "logo": "https://i.ibb.co/J2GB4B3/google-0.png",
     "title": "Web Designer",
     "name": "Google",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": 5,
+    "id": "5",
     "logo": "https://i.ibb.co/pnTJkL7/airbnb.png",
     "title": "Human Resources Manager",
     "name": "AirBnB",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "id": 6,
+    "id": "6",
     "logo": "https://i.ibb.co/kxKTz8x/career-hub.png",
     "title": "Sales Representative",
     "name": "Career Hub",

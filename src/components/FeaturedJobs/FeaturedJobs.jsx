@@ -3,12 +3,11 @@ import Job from "../Job/Job";
 
 const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
-  let allJobs = [];
 
   useEffect(() => {
-    fetch("./featured-jobs.json")
+    fetch("/featured-jobs.json")
       .then((res) => res.json())
-      .then((data) => setJobs(data));
+      .then((data) => setJobs(data.slice(0, 4)));
   }, []);
 
   return (
