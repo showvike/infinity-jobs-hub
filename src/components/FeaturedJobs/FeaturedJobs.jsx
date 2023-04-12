@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import Job from "../Job/Job";
 
 const FeaturedJobs = () => {
   const [jobs, setJobs] = useState([]);
+  const allJobs = useLoaderData();
 
   useEffect(() => {
     fetch("/featured-jobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data.slice(0, 4)));
   }, []);
+
+  const handleSeeAllJobs = () => setJobs(allJobs);
 
   return (
     <div className="mt-16">
@@ -25,7 +29,10 @@ const FeaturedJobs = () => {
         ))}
       </div>
       <div className="text-center mt-10">
-        <button className="px-7 py-4 bg-gradient-to-r from-li-gr-fr to-li-gr-to rounded-lg font-extrabold text-xl text-white">
+        <button
+          onClick={handleSeeAllJobs}
+          className="px-7 py-4 bg-gradient-to-r from-li-gr-fr to-li-gr-to rounded-lg font-extrabold text-xl text-white"
+        >
           See All Jobs
         </button>
       </div>
