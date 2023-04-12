@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05] flex justify-between items-center pt-12 px-24">
+    <nav className="text-center bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05] md:flex justify-between items-center pt-3 md:pt-12 px-3 md:px-24">
       <h1 className="font-extrabold text-3xl text-dark-01">
         Infinity Jobs Hub
       </h1>
-      <ul className="flex gap-7 font-medium text-dark-03">
+      <ul className="md:flex gap-7 font-medium text-dark-03">
         <li>
           <Link to="/">Home</Link>
         </li>

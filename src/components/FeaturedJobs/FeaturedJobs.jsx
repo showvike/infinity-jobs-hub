@@ -15,15 +15,15 @@ const FeaturedJobs = () => {
   const handleSeeAllJobs = () => setJobs(allJobs);
 
   return (
-    <div className="mt-16">
+    <div className="mt-8 md:mt-16">
       <div className="text-center">
         <h2 className="font-extrabold text-5xl text-dark-01">Featured Jobs</h2>
-        <p className="mt-4 font-medium text-dark-03">
+        <p className="mt-2 md:mt-4 font-medium text-dark-03">
           Explore thousands of job opportunities with all the information you
           need. It's your future.
         </p>
       </div>
-      <div className="mt-8 grid grid-cols-2 gap-6 px-24">
+      <div className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 px-3 md:px-24">
         {jobs.map((job) => (
           <Job key={job.id} job={job} />
         ))}

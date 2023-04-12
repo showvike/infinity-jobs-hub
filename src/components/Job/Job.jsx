@@ -7,14 +7,16 @@ const Job = ({ job }) => {
   const { logo, title, name, type, time, location, salary, id } = job;
 
   return (
-    <div className="p-10 border border-solid border-dark-06 rounded-lg">
+    <div className="text-center md:text-left p-5 md:p-10 border border-solid border-dark-06 rounded-lg">
       <div className="h-14">
-        <img src={logo} alt={name} />
+        <img className="mx-auto md:mx-0" src={logo} alt={name} />
       </div>
-      <div className="mt-2">
+      <div className="mt-1 md:mt-2">
         <h3 className="font-extrabold text-2xl text-dark-02">{title}</h3>
-        <p className="mt-2 font-semibold text-xl text-dark-03">{name}</p>
-        <div className="mt-4">
+        <p className="mt-1 md:mt-2 font-semibold text-xl text-dark-03">
+          {name}
+        </p>
+        <div className="mt-2 md:mt-4">
           <button className="outline outline-1 outline-li-gr-fr rounded px-4 py-2 text-transparent bg-clip-text bg-gradient-to-r from-li-gr-fr to-li-gr-to font-extrabold">
             {type}
           </button>
@@ -22,7 +24,7 @@ const Job = ({ job }) => {
             {time}
           </button>
         </div>
-        <p className="mt-4 h-16">
+        <p className="mt-2 md:mt-4 h-16">
           <span className="font-semibold text-xl text-dark-03">
             <img className="inline mr-2" src={Location} alt="Location icon" />
             {location}
