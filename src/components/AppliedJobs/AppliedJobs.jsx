@@ -8,6 +8,20 @@ const AppliedJobs = () => {
 
   useEffect(() => setAppliedJobs(appliedJobsLoader), []);
 
+  const handleRemote = () => {
+    const remoteJobs = appliedJobs.filter(
+      (appliedJob) => appliedJob.type === "Remote"
+    );
+    setAppliedJobs(remoteJobs);
+  };
+
+  const handleOnsite = () => {
+    const onsiteJobs = appliedJobs.filter(
+      (appliedJob) => appliedJob.type === "Onsite"
+    );
+    setAppliedJobs(onsiteJobs);
+  };
+
   return (
     <div>
       <div className="py-16 bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05]">
@@ -15,7 +29,21 @@ const AppliedJobs = () => {
           Applied Jobs
         </h2>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 mx-24 flex gap-4 justify-end">
+        <button
+          onClick={handleRemote}
+          className="px-4 py-2.5 bg-gradient-to-r from-li-gr-fr to-li-gr-to rounded-lg font-extrabold text-xl text-white"
+        >
+          Remote
+        </button>
+        <button
+          onClick={handleOnsite}
+          className="px-4 py-2.5 bg-gradient-to-r from-li-gr-fr to-li-gr-to rounded-lg font-extrabold text-xl text-white"
+        >
+          Onsite
+        </button>
+      </div>
+      <div className="mt-8">
         {appliedJobs.map((appliedJob) => (
           <AppliedJob key={Math.random()} appliedJob={appliedJob} />
         ))}
