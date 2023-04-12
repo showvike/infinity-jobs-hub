@@ -3,7 +3,7 @@ import Person from "../../assets/images/person.png";
 
 const Banner = () => {
   return (
-    <div className="text-center md:w-full pt-5 md:pt-10 md:flex items-center gap-8 bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05]">
+    <div className="text-center md:text-left md:w-full pt-5 md:pt-10 md:flex items-center gap-8 bg-gradient-to-r from-li-gr-fr/[.05] to-li-gr-to/[.05]">
       <div className="md:w-1/2 pl-3 md:pl-24">
         <h2 className="font-extrabold text-7xl text-dark-01 leading-tight">
           One Step
