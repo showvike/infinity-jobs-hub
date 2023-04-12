@@ -5,18 +5,19 @@ import AppliedJob from "../AppliedJob/AppliedJob";
 const AppliedJobs = () => {
   const [appliedJobs, setAppliedJobs] = useState([]);
   const appliedJobsLoader = useLoaderData();
+  const copyOfAppliedJobsLoader = [...appliedJobsLoader];
 
-  useEffect(() => setAppliedJobs(appliedJobsLoader), []);
+  useEffect(() => setAppliedJobs(copyOfAppliedJobsLoader), []);
 
   const handleRemote = () => {
-    const remoteJobs = appliedJobs.filter(
+    const remoteJobs = appliedJobsLoader.filter(
       (appliedJob) => appliedJob.type === "Remote"
     );
     setAppliedJobs(remoteJobs);
   };
 
   const handleOnsite = () => {
-    const onsiteJobs = appliedJobs.filter(
+    const onsiteJobs = copyOfAppliedJobsLoader.filter(
       (appliedJob) => appliedJob.type === "Onsite"
     );
     setAppliedJobs(onsiteJobs);
